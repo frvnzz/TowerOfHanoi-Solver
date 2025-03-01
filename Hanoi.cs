@@ -47,6 +47,7 @@
 
             if (numDisks == 0)
             {
+                // overwriting default color of PrintError
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("You input zero discs (=____=)");
                 Console.ResetColor();
@@ -57,7 +58,7 @@
         }
 
 
-        // helper method to print moves
+        // helper to print moves
         static void PrintMoves(string method, int moves, ConsoleColor color)
         {
             Console.ForegroundColor = color;
@@ -65,7 +66,7 @@
             Console.ResetColor();
         }
 
-        // helper method for error messages
+        // helper for error messages
         static void PrintError(string message)
         {
             Console.ForegroundColor = ConsoleColor.Red;

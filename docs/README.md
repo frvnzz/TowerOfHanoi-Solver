@@ -1,6 +1,8 @@
-# TowerOfHanoi
+# TowerOfHanoi Solver
 
-![Tower of Hanoi Animation](/docs/Tower_Of_Hanoi.gif)
+![Tower of Hanoi Animation](/docs/Tower_Of_Hanoi.gif)  
+
+The objective of the Tower of Hanoi game is to move a given amount of disks from Tower 1 over to Tower 3. The challenge of the game is, that you cannot place a larger disk onto a smaller one.
 
 ## About The Project
 
@@ -26,7 +28,7 @@ Before running the program, ensure that you have the following installed:
 1. Clone the repository or download the source code from [here](https://github.com/frvnzz/TowerOfHanoi/archive/refs/heads/main.zip):
    ```bash
    git clone https://github.com/frvnzz/TowerOfHanoi.git
-   cd TowerOfHanoi
+   cd TowerOfHanoi-Solver-main
    ```
 
 2. Run the program using one of the following commands:
@@ -55,6 +57,6 @@ Franz-Aurel Huber – [cc231014@fhstp.ac.at](mailto:cc231014@fhstp.ac.at)
 
 ## Acknowledgments
 
-*Tower Of Hanoi Animation  
+*Tower of Hanoi Animation  
 `/docs/Tower_Of_Hanoi.gif`  
 Source: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Iterative_algorithm_solving_a_6_disks_Tower_of_Hanoi.gif), licensed under [Creative Commons Attribution-Share Alike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/deed.en).*
