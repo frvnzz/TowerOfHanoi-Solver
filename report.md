@@ -3,11 +3,11 @@
 
 Course: C# Development SS2025 (4 ECTS, 3 SWS)
 
-Student ID:
+Student ID: cc231014
 
-BCC Group:
+BCC Group: A
 
-Name:
+Name: Franz-Aurel Huber
 
 ## Methodology: 
 (explain your logic to solve the problem)
@@ -19,7 +19,13 @@ Name:
 (the challenges you faced and how you solved it)
 
 ## Work with: 
-(List down the name of your colleagues if you work with them)
+/
 
 ## Reference: 
-(any reference material used for project)
+### Websites:
+[Iterative Tower of Hanoi](https://www.geeksforgeeks.org/iterative-tower-of-hanoi/)  
+[Program for Tower of Hanoi Algorithm](https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/)  
+
+### Videos:
+[C# 10.0 - How to Code the Tower of Hanoi Recursive Solution in C#](https://www.youtube.com/watch?v=VhcY7ySH51g)  
+[Tower of Hanoi | Recursion Problem | GeeksforGeeks](https://www.youtube.com/watch?v=YstLjLCGmgg&t=152s)

@@ -1,23 +1,44 @@
-## About The Project
-(built With i.e., what kinds of environment?)
+# TowerOfHanoi
 
-## Getting Started 
-(how to install and run your program)
+## About The Project
+
+This project is a solver for the Tower of Hanoi problem implemented in C#. The program uses two different approaches that the user can specify when running it:
+- **Recursive Approach**
+- **Iterative Approach**
+
+### Built With
+- **C#** (.NET 8.0.406)
+- **.NET 8.0 SDK** for development and execution
+
+## Getting Started
+
+To get started with the Tower of Hanoi Solver, follow the steps below to install and run the program.
 
 ### Prerequisites
-### Installation
-### Usage
-(show useful examples of how a project can be used)
 
-## Roadmap 
-(what have been implemented and what are the planed features.)
+Before running the program, ensure that you have the following installed:
+- **[.NET 8.0 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)**
 
-## Contributing 
-(encourage people to work on your project)
+### Installation and Execution
 
-## License 
-(your project license)
+1. Clone the repository or download the source code:
+   ```bash
+   git clone https://github.com/frvnzz/TowerOfHanoi.git
+   cd TowerOfHanoi
+   ```
 
-## Contact
+2. Run the program using one of the following commands:
 
-## Acknowledgments
+   **Recursive Approach:**  
+   dotnet run -Recursive <number_of_disks>,
+   e.g.:  
+   ```bash
+   dotnet run -Recursive 3
+   ```
+
+   **Iterative Approach:**  
+   dotnet run -Iterative <number_of_disks>,
+   e.g.:  
+   ```bash
+   dotnet run -Iterative 2
+   ```
