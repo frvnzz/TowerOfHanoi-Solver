@@ -7,8 +7,8 @@ This project is a solver for the Tower of Hanoi problem implemented in C#. The p
 - **Iterative Approach**
 
 ### Built With
-- **C#** (.NET 8.0.406)
-- **.NET 8.0 SDK** for development and execution
+- **C#**
+- **.NET 8.0 SDK** for development and execution/compilation
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ Before running the program, ensure that you have the following installed:
 
 ### Installation and Execution
 
-1. Clone the repository or download the source code:
+1. Clone the repository or download the source code from [here](https://github.com/frvnzz/TowerOfHanoi/archive/refs/heads/main.zip):
    ```bash
    git clone https://github.com/frvnzz/TowerOfHanoi.git
    cd TowerOfHanoi
