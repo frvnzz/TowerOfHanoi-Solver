@@ -49,7 +49,7 @@ Before running the program, ensure that you have the following installed:
 
 ## Licence
 
-Distributed under the Unlicense License. See `LICENSE.txt` for more information.
+Distributed under the Unlicense License. See `/docs/LICENSE.txt` for more information.
 
 ## Contact
 
