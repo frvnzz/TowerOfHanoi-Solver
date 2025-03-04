@@ -1,7 +1,6 @@
 # TowerOfHanoi Solver
 
-<h1 align="center">Tower of Hanoi Animation</h1><br/>
-  <p align="center">
+<p align="center">
   <img width="800" src="/docs/Tower_Of_Hanoi.gif">
 </p> 
 
