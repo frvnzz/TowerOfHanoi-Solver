@@ -1,6 +1,9 @@
 # TowerOfHanoi Solver
 
-![Tower of Hanoi Animation](/docs/Tower_Of_Hanoi.gif)  
+<h1 align="center">Tower of Hanoi Animation</h1><br/>
+  <p align="center">
+  <img width="800" src="/docs/Tower_Of_Hanoi.gif">
+</p> 
 
 The objective of the Tower of Hanoi game is to move a given amount of disks from Tower 1 over to Tower 3. The challenge of the game is, that you cannot place a larger disk onto a smaller one.
 
