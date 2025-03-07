@@ -40,3 +40,6 @@ packages/
 
 # Ignore other IDE specific files
 *.sln.ide
+
+# Ignore macOS system files
+.DS_Store

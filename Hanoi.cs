@@ -7,22 +7,15 @@
             if (!IsValidInput(args, out int numDisks)) return;
 
             string method = args[0];
-            int moves = 0;
 
             switch (method)
             {
                 case "-Recursive":
-                    Console.WriteLine($"Solving Tower of Hanoi recursively with {numDisks} disks:");
-                    moves = SolveHanoiRecursive(numDisks, 'A', 'C', 'B');
-                    PrintMoves("recursion", moves, ConsoleColor.Cyan);
+                    SolveHanoiRecursively(numDisks);
                     break;
-
                 case "-Iterative":
-                    Console.WriteLine($"Solving Tower of Hanoi iteratively with {numDisks} disks:");
-                    moves = SolveHanoiIterative(numDisks);
-                    PrintMoves("iteration", moves, ConsoleColor.Magenta);
+                    SolveHanoiIteratively(numDisks);
                     break;
-
                 default:
                     PrintError("Invalid method. Use -Recursive or -Iterative.");
                     break;
@@ -35,7 +28,7 @@
 
             if (args.Length < 2 || !int.TryParse(args[1], out numDisks))
             {
-                PrintError("Usage: dotnet run -Recursive <number_of_disks> or dotnet run -Iterative <number_of_disks>");
+                PrintWarning("Usage: dotnet run -Recursive <number_of_disks> or dotnet run -Iterative <number_of_disks>");
                 return false;
             }
 
@@ -47,43 +40,35 @@
 
             if (numDisks == 0)
             {
-                // overwriting default color of PrintError
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("You input zero discs (=____=)");
-                Console.ResetColor();
+                PrintWarning("You input zero discs (=____=)");
                 return false;
             }
 
             return true;
         }
 
-
-        // helper to print moves
-        static void PrintMoves(string method, int moves, ConsoleColor color)
+        static void SolveHanoiRecursively(int numDisks)
         {
-            Console.ForegroundColor = color;
-            Console.WriteLine($"It took {moves} moves to solve using {method}.");
-            Console.ResetColor();
+            Console.WriteLine($"Solving Tower of Hanoi recursively with {numDisks} disks:");
+            int moves = SolveHanoiRecursive(numDisks, 'A', 'C', 'B');
+            PrintMoves("recursion", moves, ConsoleColor.Cyan);
         }
 
-        // helper for error messages
-        static void PrintError(string message)
+        static void SolveHanoiIteratively(int numDisks)
         {
-            Console.ForegroundColor = ConsoleColor.Red;
-            Console.WriteLine(message);
-            Console.ResetColor();
+            Console.WriteLine($"Solving Tower of Hanoi iteratively with {numDisks} disks:");
+            int moves = SolveHanoiIterative(numDisks);
+            PrintMoves("iteration", moves, ConsoleColor.Magenta);
         }
 
-        // recursive logic
         static int SolveHanoiRecursive(int n, char fromRod, char toRod, char auxRod)
         {
             if (n == 0) return 0;
             int moves = SolveHanoiRecursive(n - 1, fromRod, auxRod, toRod);
-            Console.WriteLine($"Move disk {n} from rod {fromRod} to rod {toRod}");
+            Console.WriteLine($"Move disk {n} from {fromRod} to {toRod}");
             return moves + 1 + SolveHanoiRecursive(n - 1, auxRod, toRod, fromRod);
         }
 
-        // iterative logic
         static int SolveHanoiIterative(int numDisks)
         {
             Stack<(int, char, char, char)> stack = new();
@@ -95,19 +80,40 @@
                 var (disk, fromRod, toRod, auxRod) = stack.Pop();
                 if (disk == 1)
                 {
-                    Console.WriteLine($"Move disk {disk} from rod {fromRod} to rod {toRod}");
+                    Console.WriteLine($"Move disk {disk} from {fromRod} to {toRod}");
                     moves++;
                 }
                 else
                 {
                     stack.Push((disk - 1, auxRod, toRod, fromRod));
-                    Console.WriteLine($"Move disk {disk} from rod {fromRod} to rod {toRod}");
+                    Console.WriteLine($"Move disk {disk} from {fromRod} to {toRod}");
                     moves++;
                     stack.Push((disk - 1, fromRod, auxRod, toRod));
                 }
             }
-
             return moves;
+        }
+
+        // Console.WriteLine functions with styling
+        static void PrintMoves(string method, int moves, ConsoleColor color)
+        {
+            Console.ForegroundColor = color;
+            Console.WriteLine($"It took {moves} moves to solve using {method}.");
+            Console.ResetColor();
+        }
+
+        static void PrintError(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine(message);
+            Console.ResetColor();
+        }
+
+        static void PrintWarning(string message)
+        {
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine(message);
+            Console.ResetColor();
         }
     }
 }
