@@ -22,7 +22,7 @@ The code is structure into `SolveHanoiRecursively`, `SolveHanoiIteratively` and 
 
 ## Additional Features
 1. Checking the user inputs: I implemented a positive integer check and a special console output when the user inputs 0 disks.
-2. Color Coding: The warnings as well as the Recursion / Iteration output are color coded for readability inside the console. For this, I implemented seperate helper functions for writing to the console, that can be called depending on what color should be displayed (`PrintMoves`, `PrintError`, `PrintWarning`).
+2. Color Coding: The warnings as well as the Recursion / Iteration output are color coded for readability inside the console. For this, I implemented separate helper functions for writing to the console, that can be called depending on what color should be displayed (`PrintMoves`, `PrintError`, `PrintWarning`).
 
 ## Discussion / Conclusion
 Understanding the game / problem in the first place and boiling it down to logic that can be implemented using C# was the biggest problem I had.

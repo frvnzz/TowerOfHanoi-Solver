@@ -40,7 +40,7 @@
 
             if (numDisks == 0)
             {
-                PrintWarning("You input zero discs (=____=)");
+                PrintWarning("You input zero disks (=____=)");
                 return false;
             }
 

@@ -30,7 +30,7 @@ Before running the program, ensure that you have the following installed:
 1. Clone the repository or download the source code from [here](https://github.com/frvnzz/TowerOfHanoi/archive/refs/heads/main.zip):
    ```bash
    git clone https://github.com/frvnzz/TowerOfHanoi.git
-   cd TowerOfHanoi-Solver-main
+   cd TowerOfHanoi-Solver
    ```
 
 2. Run the program using one of the following commands:
