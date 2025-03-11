@@ -34,6 +34,7 @@ Understanding the game / problem in the first place and boiling it down to logic
 ### Websites:
 [Iterative Tower of Hanoi](https://www.geeksforgeeks.org/iterative-tower-of-hanoi/)  
 [Program for Tower of Hanoi Algorithm](https://www.geeksforgeeks.org/c-program-for-tower-of-hanoi/)  
+[Stack Class](https://learn.microsoft.com/en-us/dotnet/api/system.collections.stack?view=net-8.0)
 
 ### Videos:
 [C# 10.0 - How to Code the Tower of Hanoi Recursive Solution in C#](https://www.youtube.com/watch?v=VhcY7ySH51g)  
