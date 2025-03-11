@@ -29,7 +29,7 @@ Before running the program, ensure that you have the following installed:
 
 1. Clone the repository or download the source code from [here](https://github.com/frvnzz/TowerOfHanoi/archive/refs/heads/main.zip):
    ```bash
-   git clone https://github.com/frvnzz/TowerOfHanoi.git
+   git clone https://github.com/frvnzz/TowerOfHanoi-Solver.git
    cd TowerOfHanoi-Solver
    ```
 
